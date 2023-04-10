@@ -4699,4 +4699,4 @@ var index = Object.freeze({
   getConfig: getConfig
 });
 
-export { turbo_es2017Esm as Turbo, cable, createWebSocketURL };
+export { turbo_es2017Esm as Turbo, cable, createWebSocketURL, createConsumer$1 };
