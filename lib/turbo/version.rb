@@ -1,3 +1,3 @@
 module Turbo
-  VERSION = "1.4.2.fork-nt"
+  VERSION = "1.4.3.fork-nt"
 end

@@ -4355,6 +4355,7 @@ class Connection {
       if (this.webSocket) {
         this.uninstallEventHandlers();
       }
+      console.log("WS " + this.consumer.url)
       this.webSocket = new adapters.WebSocket(this.consumer.url, protocols);
       this.installEventHandlers();
       this.monitor.start();
@@ -4632,6 +4633,7 @@ class Subscriptions {
 
 class Consumer {
   constructor(url) {
+    console.log("CONS " + url)
     this._url = url;
     this.subscriptions = new Subscriptions(this);
     this.connection = new Connection(this);
